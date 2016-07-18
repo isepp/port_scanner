@@ -11,7 +11,7 @@ subprocess.call('clear', shell=True)
 remoteServer    = raw_input("Enter a remote host to scan: ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
-# Print a nice banner with information on which host we are about to scan
+# Print banner with information about host to scan
 print "-" * 60
 print "Please wait, scanning remote host", remoteServerIP
 print "-" * 60
@@ -19,9 +19,9 @@ print "-" * 60
 # Check what time the scan started
 t1 = datetime.now()
 
-# Using the range function to specify ports (here it will scans all ports between 1 and 1024)
+#Specify ports
 
-# We also put in some error handling for catching errors
+# Error handling
 
 try:
     for port in range(1,1025):  
